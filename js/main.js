@@ -9,6 +9,11 @@
 	$( document ).ready(function() {
 		console.log("ready!");
 		changeModelWidth();
+		$(".model").hover(function() {
+			thumbHover($(this));
+		}, function() {
+			thumbUnhover($(this));
+		});
 		
 	});
 	
@@ -89,24 +94,27 @@
 	* @peram: the model element that called the function
 	*/
 	function thumbHover(element) {
-		var el = $(element).find('.thumbH');
-		var name = $(element).find('.mtitle');
-		var src = "img/thumbhover.png";
-		if (el.attr("src") == src) {
-			var h = $(".model").height();
-			var id = setInterval(frame, 5);
-			var op = 0;
-			function frame() {
-				if (op >= h) {
-					clearInterval(id);
-					name.css("display", "block");
-				} else {
-					op = op + 30;
-					el.css("height", op + "px");
-				}
-			}
-		}
 
+			isRunning = true;
+			var el = $(element).find('.thumbH');
+			var name = $(element).find('.mtitle');
+			var src = "img/thumbhover.png";
+			
+			if (el.attr("src") == src) {
+				var h = $(".model").height();
+				var id = setInterval(frame, 5);
+				var op = 0;
+				function frame() {
+					if (op >= h) {
+						clearInterval(id);
+					} else {
+						op = op + 30;
+						el.css("height", op + "px");
+					}
+				}
+				name.css("visibility", "visible");
+			}	
+			
 	}
 	/**
 	* This function brings down the name caption when the
@@ -114,23 +122,24 @@
 	* @peram: the model element that called the function
 	*/
 	function thumbUnhover(element) {
-		var el = $(element).find('.thumbH');
-		var name = $(element).find('.mtitle');
-		var src = "img/thumbhover.png";
-		if (el.attr("src") == src) {
-			var h = $(".model").height();
-			var id = setInterval(frame, 5);
-			var op = h;
-			function frame() {
-				if (op <= 0) {
-					clearInterval(id);
-				} else {
-					op = op - 30;
-					el.css("height", op + "px");
+
+			var el = $(element).find('.thumbH');
+			var name = $(element).find('.mtitle');
+			var src = "img/thumbhover.png";
+			if (el.attr("src") == src) {
+				name.css("visibility", "hidden");
+				var h = $(".model").height();
+				var id = setInterval(frame, 5);
+				var op = h;
+				function frame() {
+					if (op <= 0) {
+						clearInterval(id);
+					} else {
+						op = op - 30;
+						el.css("height", op + "px");
+					}
 				}
 			}
-			name.css("display", "none");
-		}
 	}
 	
 	var selected = [];
