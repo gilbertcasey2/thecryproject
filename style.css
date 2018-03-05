@@ -1,0 +1,838 @@
+@charset "UTF-8";
+/* CSS Document 
+* Name: style.css
+* Author: Casey E Gilbert
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "proxima-nova",sans-serif;
+	margin-top: 0px;
+	overflow-x: hidden;
+	width: 100vw;
+}
+#container {
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+}
+
+/* --------------- Universal Classes ---------------- */
+
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
+visited {
+	text-decoration: inherit;
+	color: inherit;
+
+}
+h1 {
+	margin: 0;
+}
+.title {
+	font-family: "termina", sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+	text-align: center;
+	position: relative;
+}
+
+.nav {
+	font-size: 12px;
+	font-weight: 400;
+	color: #d5d4d4;
+}
+.anav {
+	position: absolute;
+	bottom: -5px;
+	visibility: hidden;
+}
+.line {
+	position: relative;
+	left: 50%;
+	margin-left: -122px;
+	opacity: .5;
+}
+.subcap {
+	font-size: 14px;
+	font-weight: 400;
+	position: relative;
+	text-align: center;
+}
+
+/* --------------- THE TOP SECTION ---------------- */
+
+
+#top nav {
+	position: absolute;
+	top: 40px;
+	z-index: 1;
+	display: inline;
+	right: 50px;
+/*	width: 850px;
+*/}
+#top nav ul a li {
+	display: inline-block;
+	margin-left: 48px;
+}
+
+#top ul {
+	right: 0px;
+}
+
+#top {
+	background-color: #0b0b0b;
+	width: 100%;
+	height: 596px;
+	position: relative;
+	top: 0px;
+}
+#top .title {
+	color: #dad7d7;
+	top: 185px;
+	z-index: 1;
+	font-size: 48px;
+}
+#top h1 .title {
+	margin: 0px;
+}
+
+#topFace {
+	position: absolute;
+	left: 0px;
+	top: 2px;
+}
+
+#top #line {
+	top: 180px;
+}
+#top .subcap {
+	color: #9e9d9d;
+	top: 210px;
+}
+#welcome p {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	color:  #d5d4d4;
+	z-index:2;
+	font-size: 17px;
+	font-weight: 200;
+}
+#play {
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	top: 345px;
+}
+#top #select {
+	position: absolute;
+	left: 50%;
+	margin-left: -68px;
+	top: 400px;
+}
+
+/* --------------- SELECT MODELS ---------------- */
+
+#selection {
+	position: relative;
+	width: 100%;
+}
+
+#selection .title {
+	color: #2e2e2e;
+	top: 80px;
+}
+
+#selection #line2 {
+	top: 85px;	
+}
+
+#vidLine {
+	position: absolute;
+	top: 125px;
+}
+
+#selection .subcap {
+	color: #4c4a4a;
+	top: 120px;
+	opacity: .8;
+}
+
+#Rarrow, #Larrow {
+	position: absolute;
+	top: 226px;
+}
+#Larrow {
+	left: 75px;
+}
+
+#Rarrow {
+	left: 98vw;
+	margin-left: -75px;
+}
+
+#models {
+	position: relative;
+	width: 100vw;
+	font-size: 0px;
+	top: 220px;
+	margin-bottom: 30px;
+	overflow:hidden;
+	height: auto;
+	padding-bottom: 200px;
+	
+}
+#models2 {
+	position: relative;
+	width: 100vw;
+	font-size: 0px;
+	top: 130px;
+	margin-bottom: 30px;
+	overflow:hidden;
+	height: auto;
+	
+}
+.modelLabel {
+	display: inline-block;
+	height: auto;
+}
+.model {
+	box-sizing: border-box;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	display: inline-block;
+	opacity: 1;
+	overflow: hidden;
+	
+}
+.thumb {
+	box-sizing: border-box;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	opacity: 1;
+	overflow: hidden;
+	bottom: 0px;
+	display: inline-block;
+	
+}
+.thumbH {
+	box-sizing: border-box;
+	position: absolute;;
+	margin: 0px;
+	padding: 0px;
+	opacity: 1;
+	overflow: hidden;
+	bottom: 0px;
+	display:inline-block;
+	width: 100%;
+	height: 10px;
+}
+
+.mtitle {
+	position: relative;
+	color: #dcdbdb;
+	z-index: 4;
+	font-size: 30px;
+	font-weight: 200;
+	text-align: center;
+	top: 250px;
+	margin: auto;
+	display: none;
+}
+
+#viewbut {
+	position: relative;
+	top: 100px;
+	left: 50%;
+	margin-left: -68px;
+	z-index: 2;
+	height: 33px;
+	width: 136px;
+	z-index: 1;
+	pointer = cursor;
+}
+#saveBut {
+	position: relative;
+	top: 60px;
+	left: 50%;
+	margin-left: -68px;
+	z-index: 2;
+	width: 136px;
+	z-index: 1;
+	pointer = cursor;
+}
+
+/* --------------- VIDEO ---------------- */
+#video {
+	position: relative;
+}
+
+#yourVid {
+	margin-top: 50px;	
+}
+
+#playBut {
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 2;
+	width: 80px;
+	height: 80px;
+	pointer-events: none;
+}
+#vidcover {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	opacity=1;
+}
+
+#savebut {
+	position: relative;
+	top: 50px;
+	left: 50%;
+	margin-left: -68px;
+	display: none;
+	margin-bottom: 80px;
+}
+
+#seek-bar {
+	position: absolute;
+	bottom: 45px;
+	width: 80%;
+	left: 0px;
+	z-index: 2;
+}
+
+/* get rid of old range style */
+input[type=range] {
+	-webkit-appearance: none;
+	width: 80%;
+	background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type=range]::-ms-track {
+	width: 100%;
+	cursor: pointer;
+	
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+#seek {
+	z-index: 3;
+	opacity: 1;
+}
+/* now give it our own */
+#seek input[type=range]::-webkit-slider-thumb  {
+	-webkit-appearance: none;
+	border: 1px solid #cccbcb;
+	border-radius: 6px;
+	margin-top: -6px;
+	width: 13px;
+	background:  #feeb4c;
+	height: 13px;
+}
+
+#seek input[type=range]:: -moz-range-thumb {
+	border: 1px solid #cccbcb;
+	border-radius: 6px;
+	margin-top: -6px;
+	width: 13px;
+	background:  #feeb4c;
+	height: 13px;
+}
+
+/** NOW we do the actual slider bar itself */
+#seek input[type=range]::-webkit-slider-runnable-track {
+	border-radius: 2px;
+	-webkit-appearance: none;
+	margin-top: -22px;
+	width: 60%;
+	height: 3px;
+	margin-left: 20%;
+	background:  #cccbcb;
+}
+
+#seek input[type=range]:focus::-webkit-slider-runnable-track {
+	margin-top: -22px;
+	width: 60%;
+	height: 3px;
+	margin-left: 20%;
+	background:  #cccbcb;
+}
+
+#seek input[type=range]:: -moz-range-track {
+	margin-top: -22px;
+	width: 60%;
+	height: 3px;
+	margin-left: 20%;
+	background:  #cccbcb;
+}
+
+/* Now for the volume bar */
+
+#volume-bar {
+	position: absolute;
+	bottom: 45px;
+	width: 10%;
+	left: 40px;
+	z-index: 2;
+}
+#volume {
+	z-index: 3;
+	width: 20%;
+	opacity: 1;
+}
+
+#volume input[type=range]::-webkit-slider-thumb  {
+	-webkit-appearance: none;
+	border: 1px solid #cccbcb;
+	border-radius: 6px;
+	margin-top: -4px;
+	width: 10px;
+	background:  #cccbcb;
+	height: 10px;
+}
+
+#volume input[type=range]:: -moz-range-thumb {
+	border: 1px solid #cccbcb;
+	border-radius: 6px;
+	margin-top: -4px;
+	width: 10px;
+	background:  #cccbcb;
+	height: 10px;
+}
+
+/** NOW we do the actual slider bar itself */
+#volume input[type=range]::-webkit-slider-runnable-track {
+	border-radius: 2px;
+	-webkit-appearance: none;
+	margin-top: -22px;
+	width: 20%;
+	height: 2px;
+	margin-left: 10%;
+	background:  #cccbcb;
+}
+
+#volume input[type=range]:focus::-webkit-slider-runnable-track {
+	margin-top: -22px;
+	width:20%;
+	height: 2px;
+	margin-left: 10%;
+	background:  #cccbcb;
+}
+
+#volume input[type=range]:: -moz-range-track {
+	margin-top: -14px;
+	width: 20%;
+	height: 2px;
+	margin-left: 10%;
+	background:  #cccbcb;
+}
+
+/* The icon */
+#vol {
+	position: absolute;
+	z-index: 3;
+	bottom: 45px;
+	left: 12px;
+}
+
+
+/************** NOW THE CONTRIBUTE SECTION ******************/
+
+#contribute {
+	position: relative;
+	top: 183px;
+	width: 100%;
+	height: 510px;
+	background-image: url(img/contribute_c.jpg);
+	background-size: cover;
+}
+
+#contribute2 {
+	position: relative;
+	top: 183px;
+	width: 100%;
+	height: 100vh;
+	background-image: url(img/contribute_c.jpg);
+	background-size: cover;
+}
+
+#contribute #inner {
+	padding-top: 140px;
+
+}
+
+#contribute .title {
+	color: #dad9d9;
+}
+#contribute .subcap {
+	color: #b9b7b7;
+	margin-top: 30px;
+}
+
+#contBut {
+	position: relative;
+	left: 50%;
+	margin-left: -137px;
+	margin-top: 64px;
+}
+#contribute .upload {
+	color: #a7a4a4;
+	position: absolute;
+	top: 335px;
+	left: 50%;
+	margin-left: -80px;
+}
+
+#about {
+	position: relative;
+	top: 180px;
+	padding-top: 102px;
+	padding-bottom: 102px;
+}
+#about .text {
+	color: black;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 34px;
+	width: 684px;
+	position: relative;
+	left: 50%;
+	margin-left: -342px;
+	padding-top: 50px;
+}
+
+#about .title {
+	padding-bottom: 26px;
+}
+
+#formHid {
+	position: relative;
+	display: none;
+	width: 876px;
+	left: 50%;
+	margin-left: -438px;
+	padding-top: 86px;
+}
+
+.lab {
+	color: #dedede;
+	font-size: 20px;
+	font-weight: 400;
+	padding-bottom: 18px;
+}
+
+.selectOption {
+	width: 100%;
+	display:inline-block;
+}
+
+#uploadL, #uploadR {
+	margin-top: 85px;
+	width: 70%;
+	display: inline-block; 
+}
+#uploadL {
+	float: left;
+}
+#uploadR {
+	float: left;
+}
+
+#nameBox {
+	width: 871px;
+	height: 44px;
+	background-image: url(img/name-box.png);
+	padding-left: 20px;
+}
+input, file {
+	background-color: transparent;
+	border: none;
+}
+
+input, checkbox {
+	background-color:transparent;
+	border:none;	
+}
+.boxText {
+	color: #717070;
+	font-size: 16px;
+	weight: 400;
+}
+
+#modelpic {
+	/*background-image: url(img/upload.png);
+	border: none;
+	background-size: cover;*/
+}
+
+/*----------------- Drag and Drop CSS ---------------------- */
+
+
+
+
+.chooseImg{
+	color: #bfbdbd;
+	font-size: 16px;
+	font-weight: 600;
+	position: relative;
+	top: 1px;
+	text-align: center;
+	width: 80%;
+	height: 30px;
+	padding-left: 163px;
+	padding-right: 163px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	border: solid 1px #8d8c8c;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.box, .box2 {
+	display: inline;
+}
+
+
+.box__file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.selectModel {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+#vidSubmit {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+#vidSubmit2 {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.box p {
+	color: #b9b7b7;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	position: relative;
+	top: 100px;
+}
+
+.chooseImg + label {
+	background-color: transparent;
+	border: solid 1px #8d8c8c;
+	background-color: red;
+	width: 400px;
+}
+
+
+/*--------------- CSS for the right box upload ------------------- */
+
+
+.box2__file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.box2 p {
+	color: #b9b7b7;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	position: relative;
+	top: 100px;
+}
+
+
+#formHid .what {
+	font-size: 18px;
+	color: #b3b2b2;
+	position: relative;
+	text-align: center;
+	width: 400px;
+	font-weight: 400;
+	top: 150px;
+	height: 30px;
+	left: 50%;
+	margin-left: -200px;
+}
+
+.formy .sub1 {
+	color: #e1e0e0;
+	font-size: 12px;
+	font-weight: 400;
+	position: relative;
+	top: 187px;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+/*----------------Now for the login form--------------------*/
+
+
+#loginL, #loginR {
+	margin-top: 85px;
+	width: 384px;
+	display: inline-block;
+	position: relative;
+	top: 160px;
+	color: #b9b7b7;
+	opacity: .7;
+}
+#loginL {
+	float: left;
+	height: 200px;
+}
+#loginR {
+	float: right;
+	height: 200px;
+	
+}
+
+#loginL #nameBox {
+	width: 384px;
+	margin-bottom: 38px;
+}
+
+#loginR #nameBox {
+	width: 384px;	
+	margin-bottom: 38px;
+}
+
+#loginL .lab, #loginR .lab {
+	padding-bottom: 10px;
+}
+
+.little {
+	font-size: 12px;
+	opacity: .6;
+	padding-bottom: 8px;
+}
+
+.sub2 {
+	width: 396px;
+	text-align: center;
+	border: solid 1px #b9b7b7;
+	color: #b9b7b7;
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	top: 350px;
+	left: 28%;
+	opacity: .9;	
+	margin-bottom: 30px;
+}
+
+
+/*------------------- FOOTER --------------------*/
+
+footer {
+	height: 165px;
+	background-color: #191919;
+	position: relative;
+	top: 180px;
+}
+
+footer ul li{
+	display: inline-block;
+	font-size: 12px;
+	color: #cac8c8;
+	font-weight: 300;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+footer ul {
+	position: relative;
+	left: 50%;
+	margin-left: -140px;
+	top: 35px;
+	display: inline;
+}
+
+#fline {
+	position: relative;
+	border-top: solid 1px;
+	border-color: #666666;
+	opacity: .25;
+	width: 254px;
+	left: 50%;
+	margin-left: -276px;
+	top: 60px;
+	display: inline-block;
+}
+
+footer p {
+	text-align: center;
+	color: #858383;
+	font-size: 12px;
+	margin-top: 92px;
+}
+
+
+/*------------------ ADMIN PAGE ---------------------*/
+
+.deleteGoat {
+	position: aboslute;
+	top: 0px;
+	background: white;
+	width: 150px;
+	height: 40px;
+	margin-top: 4px;
+	margin-left: 10px;
+	padding-top: 0px;
+	opacity: .7;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 14px;
+	color: black;
+	text-align: center;
+	font-weight: 400;
+	display:block;
+}
+
