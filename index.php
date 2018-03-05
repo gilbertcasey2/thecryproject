@@ -113,7 +113,7 @@
                             
                             <!-- Label used to style them--->
                             <label for="check<?php echo $row['ID'];?>"  class="modelLabel">
-                            <div class="model" id="<?php $count ?>" onMouseEnter='thumbHover(this)' onMouseLeave='thumbUnhover(this)' onClick='thumbClick(this)' style='background-image: url(" <?php echo $row['image']; ?> ");'>
+                            <div class="model" id="<?php $count ?>" onClick='thumbClick(this)' style='background-image: url(" <?php echo $row['image']; ?> ");'>
                             <p class="mtitle"><?php echo strtoupper($row['Name']); ?></p><img src="img/thumbhover.png" class="thumbH" alt="thumb" ><script>countEntries()</script></span>
 							</label><!---->
 							</div>

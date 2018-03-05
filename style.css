@@ -248,7 +248,8 @@ h1 {
 	text-align: center;
 	top: 250px;
 	margin: auto;
-	display: none;
+	display: block;
+	visibility: hidden;
 }
 
 #viewbut {
