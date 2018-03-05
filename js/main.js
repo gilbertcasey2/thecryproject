@@ -417,6 +417,14 @@
 		if (entryCount < 10) {
 			$('#Rarrow').css("display", "none");
 		}
+		var number = Math.ceil(entryCount/3);
+		var thumby = document.getElementsByClassName("model")[1];
+		var heighty = window.getComputedStyle(thumby).getPropertyValue("height");
+		heighty = heighty.slice(0,-2);
+		heighty = Number(heighty);
+		var needed = heighty*number + 350;
+		console.log("number: " + number + " and heighty: " + heighty + " needed: " + needed);
+		$("#viewbut").css("margin-top", needed + "px");
 		
 	}
 	

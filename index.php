@@ -125,15 +125,17 @@
 					?></div><?php
 				}
 				?>
+
                 <!-- our submit button --->
                 <label for="vidSubmit" id="viewbut"> 
                     <input type="submit" name="subVideo" id="vidSubmit">
                    <img src="img/viewvideo.png"  alt="View Video">
                </label>
-               </form>
-				<script>
+               <script>
 				calcLoops()
-                </script>	
+                </script>
+               </form>
+					
 			</section>
 			</section>
 	
